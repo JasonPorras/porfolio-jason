@@ -1,0 +1,182 @@
+:root{
+    --main-bg: #f1f1f1;
+    --text-color-blue:#2bd0ff;
+    --text-color-purple:#4e42d4;
+    --text-color-white:#ffffff;
+    --text-color-black:#140626;
+    --test: #ff3859;
+}
+
+
+/* Estilos generales */
+body {
+    background-color: var(--main-bg)
+}
+
+
+h2 {
+    color: var(--text-color-purple); /* Azul Bootstrap */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--text-color-purple) !important;
+}
+
+.nav-link {
+    color: var(--text-color-purple) !important;
+    font-weight: 400px;
+}
+
+.nav-item{
+    align-content: center;
+}
+
+.punto {
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    background-color: var(--test);
+    cursor: pointer; 
+    transition: width 0.3s, height 0.3s, border-radius 0.3s; 
+}
+
+.punto:hover {
+    width: 5px; 
+    height: 36px; 
+    border-radius: 0%; 
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: var(--test) !important;
+    border: var(--test) !important;
+}
+
+.navbar-nav{
+    background: #4e42d442;
+    border-radius: 30px;
+    padding: 10px 47px;
+    border: 1px solid var(--text-color-purple);
+    gap: 20px;
+}
+
+#navbarNav {
+    margin-top: 10px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño en hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.card-title {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+}
+
+.btn-cv{
+    background: #4e42d442;
+    border-radius: 30px;
+    padding: 10px 47px;
+    border: 1px solid var(--text-color-purple);
+    gap: 20px;
+}
+
+/* Estilos para la sección "Sobre mí" */
+.about-me {
+    padding: 80px 0; 
+}
+
+.about-me .section-title {
+    text-align: center; 
+    margin-bottom: 60px; 
+    font-size: 7.5rem; 
+    color: var(--text-color-purple);
+}
+
+.section-title-bg{
+    color: var(--test);
+}
+
+.about-me p {
+    font-size: 1.2rem; 
+    color: #555; 
+    margin-bottom: 30px;
+}
+
+.container-cv{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Sección "Proyectos" */
+#projects .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#projects .card:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* Sección "Contacto" */
+#contact .form-group {
+    margin-bottom: 1.5rem;
+}
+
+#contact .btn-primary {
+    width: 100%;
+}
+
+#contact h2 {
+    margin-bottom: 30px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    #about .col-md-6 {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+}
